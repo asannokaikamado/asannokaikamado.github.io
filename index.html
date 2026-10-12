@@ -1,174 +1,479 @@
 <!doctype html>
-<html>
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>阿讃の会かまど-上板町の宅配お弁当屋さん</title>
-<meta name="keywords" content="お弁当,宅配,徳島県,徳島,板野,上板,阿讃の会,かまど,管理栄養士,手作り">
-<meta name="description" content="徳島県板野郡の宅配手作り弁当を管理栄養士が提供している阿讃の会かまど">
-<link rel="icon" type="image/png" href="img/favicon.png">
-<link rel="stylesheet" media="all" href="css/ress.min.css" />
-<link rel="stylesheet" media="all" href="css/style.css" />
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/style.js"></script>
-	
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="img/favicon.png">
+<title>阿讃の会かまど｜上板町の宅配弁当・管理栄養士が手作りする野菜たっぷりの家庭料理</title>
+<meta name="description" content="徳島県上板町の宅配弁当「阿讃の会かまど」。管理栄養士が添加物を使わずに手作りする、野菜たっぷりの家庭料理のお弁当です。日替わり2種類で、和食・洋食・中華・丼ものと豊富なメニュー。板野町・上板町を中心にお昼時にお届けします。Sサイズ600円・Mサイズ720円（税込）。">
+<meta name="keywords" content="宅配弁当,日替わり弁当,お弁当,家庭料理,管理栄養士,手作り,野菜たっぷり,添加物不使用,豊富なメニュー,上板町,板野町,板野郡,徳島県,阿讃の会,かまど">
 <meta name="google-site-verification" content="b7uq7zK6_5wM0UX1NkYNZeCyqYUypd5nLfIpq1J4X_s" />
+<link rel="canonical" href="https://asannokaikamado.github.io/">
+<meta name="theme-color" content="#fff8ec">
+<link rel="icon" type="image/png" href="img/logo/favicon.png">
+<link rel="apple-touch-icon" href="img/logo/favicon.png">
+
+<!-- LINE・Facebook・X などでURLを共有したときの表示 -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="阿讃の会 かまど">
+<meta property="og:title" content="阿讃の会かまど｜上板町の宅配弁当・管理栄養士が手作りする家庭料理">
+<meta property="og:description" content="管理栄養士が添加物を使わずに手作りする、野菜たっぷりの家庭料理のお弁当。日替わりで豊富なメニューをご用意し、板野町・上板町を中心にお昼時にお届けします。">
+<meta property="og:url" content="https://asannokaikamado.github.io/">
+<meta property="og:image" content="https://asannokaikamado.github.io/img/sns/ogp.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="かまどの三色丼のお弁当と野菜の副菜">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- 検索エンジン向けのお店の情報（構造化データ） -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FoodEstablishment",
+  "name": "阿讃の会 かまど",
+  "alternateName": "かまど弁当",
+  "slogan": "食で豊かな生活を目指す。",
+  "description": "管理栄養士が添加物を使わずに手作りする、野菜たっぷりの家庭料理の宅配弁当。日替わり2種類で、和食・洋食・中華・丼ものと豊富なメニューをご用意しています。板野町・上板町を中心にお昼時にお届けします。",
+  "keywords": "宅配弁当, 日替わり弁当, 家庭料理, 管理栄養士, 手作り, 野菜たっぷり, 添加物不使用, 豊富なメニュー",
+  "url": "https://asannokaikamado.github.io/",
+  "logo": "https://asannokaikamado.github.io/img/logo/kamado-logo.png",
+  "image": "https://asannokaikamado.github.io/img/sns/ogp.jpg",
+  "telephone": "+81-80-3928-6977",
+  "email": "asannokaikamado@mail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "JP",
+    "addressRegion": "徳島県",
+    "addressLocality": "板野郡上板町"
+  },
+  "areaServed": ["徳島県板野郡上板町", "徳島県板野郡板野町"],
+  "servesCuisine": ["家庭料理", "和食", "洋食", "中華", "丼もの"],
+  "priceRange": "¥600〜¥720（税込）",
+  "hasMenu": {
+    "@type": "Menu",
+    "name": "日替わり弁当",
+    "description": "日替わり弁当A・Bの2種類。毎月の献立は献立表でご確認いただけます。",
+    "url": "https://asannokaikamado.github.io/#menu",
+    "hasMenuItem": [
+      {
+        "@type": "MenuItem",
+        "name": "日替わり弁当 Sサイズ",
+        "offers": {
+          "@type": "Offer",
+          "price": "600",
+          "priceCurrency": "JPY",
+          "priceSpecification": { "@type": "PriceSpecification", "price": "600", "priceCurrency": "JPY", "valueAddedTaxIncluded": true }
+        }
+      },
+      {
+        "@type": "MenuItem",
+        "name": "日替わり弁当 Mサイズ",
+        "offers": {
+          "@type": "Offer",
+          "price": "720",
+          "priceCurrency": "JPY",
+          "priceSpecification": { "@type": "PriceSpecification", "price": "720", "priceCurrency": "JPY", "valueAddedTaxIncluded": true }
+        }
+      }
+    ]
+  },
+  "sameAs": ["https://www.instagram.com/bentou20240306/", "https://line.me/ti/p/5j0fuFjNNn"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
 </head>
-<body>
-<header>    
-<div class="container">
-<div class="row">
-    <div class="col span-12 header">
-        <h1><a href="">阿讃の会かまど</a></h1>
-		<div class="header-box"><a href="#4"><span class="contact-button">お問い合わせ</span></a></div>
-        </div>
+<body id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/><path d="M8 11h2l1-2 2 4 1-2h2"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M12 18.5s-3.5-2-3.5-4.25a1.75 1.75 0 0 1 3.5-.5 1.75 1.75 0 0 1 3.5.5c0 2.25-3.5 4.25-3.5 4.25z"/></symbol>
+  <symbol id="i-carrot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.27 21.7s9.87-3.5 12.73-6.36a4.5 4.5 0 0 0-6.36-6.37C5.77 11.84 2.27 21.7 2.27 21.7zM8.64 14l-2.05-2.04M15.34 15l-2.46-2.46"/><path d="M22 9s-1.33-2-3.5-2C16.86 7 15 9 15 9s1.33 2 3.5 2S22 9 22 9z"/><path d="M15 2s-2 1.33-2 3.5S15 9 15 9s2-1.84 2-3.5C17 3.33 15 2 15 2z"/></symbol>
+  <symbol id="i-utensils" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 15h3M13 15h3M8 18h3"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="14" height="12" rx="2"/><path d="M15 8h4l4 4v4h-8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-inner">
+      <a class="brand" href="#top">
+        <img src="img/logo/kamado-logo.png" alt="阿讃の会 かまど" width="860" height="314">
+        <small>阿讃の会</small>
+      </a>
+      <nav class="gnav" id="gnav" aria-label="メインメニュー">
+        <a href="#about">こだわり</a>
+        <a href="#gallery">お弁当</a>
+        <a href="#price">料金</a>
+        <a href="#menu">今月の献立</a>
+        <a href="#order">ご注文方法</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+      <a class="header-tel" href="tel:08039286977"><svg class="ico"><use href="#i-phone"/></svg>080-3928-6977</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="gnav" aria-label="メニューを開く"><svg class="ico"><use href="#i-menu"/></svg></button>
     </div>
-<div class="row">
-    <div class="col span-12">
-        <nav>
-          <div id="open"></div>
-          <div id="close"></div>   
-            <div id="navi">
-        <ul>
-            <li><a href="index.html">ホーム</a></li>
-            <li><a href="#1">お弁当について</a></li>
-            <li><a href="#2">今月の献立</a></li>
-            <li><a href="#3">ご注文のしかた</a></li>
-            <!-- <li><a href="#4">お客様の声</a></li> -->
-            <li><a href="#4">お問い合わせ</a></li>
-         </ul>
-             </div>
-        </nav>
-    
-        </div>
-    </div>
-    </div>
+  </div>
 </header>
-    <div class="mainimg">
-              <img src="img/阿讃の会.JPG" alt="メイン画像">  
-        </div>
-    <main>
-        <div class="catch">
-        <h2><span class="under">かまどの宅配弁当</span></h2>
-        <p>手作りで美味しい管理栄養士が作るお弁当です。<br>板野町・上板町を中心にお昼時にお届けしています。</p>
-        </div>
-        
-<section id="1" class="gray-back">
-        <h2 class="center"><span class="under">お弁当について</span></h2>
-        <p class="center">下のようなお弁当をご提供しています。<br>詳細は<a href="https://www.instagram.com/bentou20240306/" target="_blank" style="display:inline;">Instagram</a>をご覧ください。</p>
-        <div class="container center">
-<div class="row">
-    <div class="col span-4">
-		<img src="img/000_からあげ.JPG" alt="からあげ">
-		<h3>からあげのお弁当</h3>
-		<!-- <p>ボリュームたっぷり</p> -->
-    </div>
-    <div class="col span-4">
-		<img src="img/010_鯖の南蛮漬け.JPG" alt="鯖の南蛮漬け">
-		<h3>鯖の南蛮漬けのお弁当</h3>
-		<!-- <p>ボリュームたっぷり</p> -->
-    </div>
-    <div class="col span-4">
-		<img src="img/011_グリルチキントマトソース.JPG" alt="グリルチキントマトソース">
-		<h3>グリルチキントマトソースのお弁当</h3>
-		<!-- <p>ボリュームたっぷり</p> -->
-    </div>
-    </div>
-	</div>
-</section>
-		
-<section id="2">
-        <h2 class="center"><span class="under">今月の献立</span></h2>
-        <div>
-          <img src="img/今月の献立.jpg" alt="今月の献立" style="display: block; margin: auto; width: 60%">  
-        </div>
-<div class="container center">
 
-</section>
-		
-<section id="3" class="gray-back">
-        <h2 class="center"><span class="under">ご注文のしかた</span></h2>
-<div class="container">
-<div class="center">
-    <p>朝9時までにお電話かLineにてご注文ください。</p>
-    <p>ご指定の時間にお届けいたします。</p>
-</section>
-		
-<!-- <section id="4">
-        <h2 class="center"><span class="under">お客様の声</span></h2>
-<div class="container">
-  <div class="row">
-    <div class="col span-4">
-		<img src="img/staff.jpg" alt="お客様の声１">
-		<h3>女性のお客様</h3>
-		<p>手作りで健康によいお弁当でありがたいです</p>
+<main>
+  <section class="hero" aria-label="かまどの宅配弁当">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <ul class="chips"><li>管理栄養士の手作り</li><li>野菜たっぷり</li><li>添加物不使用</li><li>600円（税込）〜</li></ul>
+        <h1><span class="nb">まいにち食べたい、</span><br><span class="hl nb">家庭料理のお弁当</span>を<br><span class="nb">お昼にお届け。</span></h1>
+        <p>管理栄養士が添加物を使わずに手作りする、野菜たっぷりの家庭料理のお弁当です。<br>日替わりで豊富なメニューをご用意し、板野町・上板町を中心にお昼時にお届けしています。</p>
+        <div class="hero-actions">
+          <a class="btn btn-orange" href="tel:08039286977"><svg class="ico"><use href="#i-phone"/></svg>電話で注文する</a>
+          <a class="btn btn-line" href="https://line.me/ti/p/5j0fuFjNNn" target="_blank" rel="noopener"><svg class="ico"><use href="#i-chat"/></svg>LINEで注文する</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <!-- 丸く切り抜く位置は object-position の左右％で調整（0%=左端、100%=右端） -->
+        <img class="ph ph1" src="img/menu/３色丼(M).jpg" alt="三色丼のお弁当と野菜の副菜" width="1474" height="1110" fetchpriority="high" style="object-position: 12% center">
+        <img class="ph ph2" src="img/menu/ちらし寿司.jpg" alt="ちらし寿司のお弁当" width="1477" height="1108" style="object-position: 50% center">
+        <img class="ph ph3" src="img/menu/天ぷら(S).jpg" alt="天ぷらのお弁当" width="1474" height="1110" style="object-position: 92% center">
+        <div class="sticker"><span>朝<b>9</b>時までの<br>ご注文で<br>当日お届け</span></div>
+        <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span>
+      </div>
     </div>
-    <div class="col span-4">
-		<img src="img/staff.jpg" alt="スタッフ">
-		<h3>働き盛りの男性のお客様</h3>
-		<p>＋100円で大盛りにできるのでボリュームが多いのが嬉しいです</p>
-    </div>
-    <div class="col span-4">
-		<img src="img/staff.jpg" alt="スタッフ">
-		<h3>給食として注文してくださっている会社様</h3>
-		<p>毎日、注文通りの数を届けてくださり助かっています</p>
-    </div>
-    </div>
-	</div>
-</section> -->
-		
-<section id="4">
-        <h2 class="center"><span class="under">お問い合わせ</span></h2>
-<div class="container">
-<div class="row">
-    <div class="col span-4">
-		<div class="contact-box">
-		<p><img src="img/tel.png" alt="電話"></p>
-		<p>080-3928-6977</p>
-		</div>
-    </div>
-	<div class="col span-4">
-		<div class="contact-box">
-		<p><img src="img/mail.png" alt="Eメール"></p>
-		<p>asannokaikamado@mail.com</p>
-		</div>
-    </div>
-  <div class="col span-4">
-    <div class="contact-box">
-    <p><img src="img/LINE_QR_IMAGE.JPG" alt="LINE"></p>
-    <p>LINE</p>
-    </div>
-    </div>
-    </div>	
+    <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,48 C200,88 420,8 720,36 C1020,64 1220,10 1440,40 L1440,80 L0,80 Z" fill="#ffffff"/></svg>
+  </section>
 
-	</div>
-</section>
-        
-    </main>
-    <footer>
-<div class="container">
-<div class="row">
-    <div class="col span-12">
-        <h4>阿讃の会の理念
-        </h4>
-        <p>美味しいもの滋養のあるものを食べると生活が豊かに感じます。<br>阿讃の会メンバーは、そのような食品づくりに取り組んでいます。</p>
+  <section class="points" id="about">
+    <div class="wrap">
+      <div class="sec-head"><span class="sub">かまどのこだわり</span><h2><span class="nb">管理栄養士が手作りする、</span><span class="nb">野菜たっぷりの家庭料理</span></h2><p>かまどのお弁当の6つのこだわりをご紹介します。</p></div>
+      <div class="point-grid">
+        <article class="point">
+          <div class="pi"><svg class="ico"><use href="#i-home"/></svg></div>
+          <p class="label">POINT 1</p>
+          <h3>ほっとする家庭料理</h3>
+          <p>毎日食べても飽きない、ほっとする味の家庭料理のお弁当です。</p>
+        </article>
+        <article class="point">
+          <div class="pi"><svg class="ico"><use href="#i-heart"/></svg></div>
+          <p class="label">POINT 2</p>
+          <h3>管理栄養士が手作り</h3>
+          <p>栄養のバランスを考えて、管理栄養士がおかずを一品ずつ手作りしています。</p>
+        </article>
+        <article class="point">
+          <div class="pi"><svg class="ico"><use href="#i-carrot"/></svg></div>
+          <p class="label">POINT 3</p>
+          <h3>野菜たっぷり</h3>
+          <p>メインのおかずに加えて、野菜を使った副菜をたっぷり詰め合わせています。</p>
+        </article>
+        <article class="point">
+          <div class="pi"><svg class="ico"><use href="#i-leaf"/></svg></div>
+          <p class="label">POINT 4</p>
+          <h3>添加物を使わない</h3>
+          <p>添加物を使わずに、素材の味をいかして手作りしています。</p>
+        </article>
+        <article class="point">
+          <div class="pi"><svg class="ico"><use href="#i-utensils"/></svg></div>
+          <p class="label">POINT 5</p>
+          <h3>豊富なメニュー</h3>
+          <p>日替わり弁当は A・B の2種類。和食・洋食・中華・丼ものまで、毎日ちがうおかずが楽しめます。</p>
+        </article>
+        <article class="point">
+          <div class="pi"><svg class="ico"><use href="#i-truck"/></svg></div>
+          <p class="label">POINT 6</p>
+          <h3>お昼にお届け</h3>
+          <p>板野町・上板町を中心に、お昼時にお届けします。</p>
+        </article>
+      </div>
     </div>
-    <!-- <div class="col span-4">
-        <h4>フッター2</h4>
-        <p>ここにSNSやテキストなどが入ります。SNSやテキストなどが入ります。</p>
-    </div> -->
-    <!-- <div class="col span-4">
-        <h4>フッター3</h4>
-        <p>ここにSNSやテキストなどが入ります。SNSやテキストなどが入ります。</p>
-    </div> -->
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="wrap">
+      <div class="sec-head"><span class="sub">お弁当ギャラリー</span><h2><span class="nb">豊富なメニューの</span><span class="nb">一部をご紹介</span></h2><p>和食・洋食・中華・丼もの、<span class="nb">カレーやスパゲティまで。</span><br>横にスワイプしてご覧ください。</p></div>
+    </div>
+    <div class="wrap slider-wrap">
+      <div class="slider" aria-roledescription="carousel" aria-label="お弁当の写真">
+        <button class="sl-btn prev" aria-label="前へ"><svg class="ico"><use href="#i-left"/></svg></button>
+        <!-- 写真は img/menu/ に入れて「python tools/update_gallery.py」を実行すると、下の一覧が作り直されます -->
+        <ul class="sl-track" id="slTrack" tabindex="0">
+          <!-- gallery:start -->
+          <li class="sl-card"><figure>
+            <img src="img/menu/３色丼(S).jpg" alt="３色丼のお弁当（Sサイズ）" width="1474" height="1110" decoding="async">
+            <figcaption>３色丼<span class="size size-s">Sサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/３色丼(M).jpg" alt="３色丼のお弁当（Mサイズ）" width="1474" height="1110" decoding="async">
+            <figcaption>３色丼<span class="size size-m">Mサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/おでん風(S).jpg" alt="おでん風のお弁当（Sサイズ）" width="1477" height="1108" decoding="async">
+            <figcaption>おでん風<span class="size size-s">Sサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/おでん風(M).jpg" alt="おでん風のお弁当（Mサイズ）" width="1477" height="1108" loading="lazy" decoding="async">
+            <figcaption>おでん風<span class="size size-m">Mサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/さばのさっぱり揚げ(S).jpg" alt="さばのさっぱり揚げのお弁当（Sサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>さばのさっぱり揚げ<span class="size size-s">Sサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/さばのさっぱり揚げ(M).jpg" alt="さばのさっぱり揚げのお弁当（Mサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>さばのさっぱり揚げ<span class="size size-m">Mサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/さわらのごまみそ焼き(S).jpg" alt="さわらのごまみそ焼きのお弁当（Sサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>さわらのごまみそ焼き<span class="size size-s">Sサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/さわらのフライタルタルソースかけ(S).jpg" alt="さわらのフライタルタルソースかけのお弁当（Sサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>さわらのフライタルタルソースかけ<span class="size size-s">Sサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/さわらのフライタルタルソースかけ(M).jpg" alt="さわらのフライタルタルソースかけのお弁当（Mサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>さわらのフライタルタルソースかけ<span class="size size-m">Mサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/さわらの天ぷら(M).jpg" alt="さわらの天ぷらのお弁当（Mサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>さわらの天ぷら<span class="size size-m">Mサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/ししゃもの磯辺揚げ(S).jpg" alt="ししゃもの磯辺揚げのお弁当（Sサイズ）" width="1477" height="1108" loading="lazy" decoding="async">
+            <figcaption>ししゃもの磯辺揚げ<span class="size size-s">Sサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/ししゃもの磯辺揚げ(M).jpg" alt="ししゃもの磯辺揚げのお弁当（Mサイズ）" width="1477" height="1108" loading="lazy" decoding="async">
+            <figcaption>ししゃもの磯辺揚げ<span class="size size-m">Mサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/すき焼き風(S).jpg" alt="すき焼き風のお弁当（Sサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>すき焼き風<span class="size size-s">Sサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/すき焼き風(M).jpg" alt="すき焼き風のお弁当（Mサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>すき焼き風<span class="size size-m">Mサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/ちらし寿司.jpg" alt="ちらし寿司のお弁当" width="1477" height="1108" loading="lazy" decoding="async">
+            <figcaption>ちらし寿司</figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/なすのはさみ揚げ(S).jpg" alt="なすのはさみ揚げのお弁当（Sサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>なすのはさみ揚げ<span class="size size-s">Sサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/なすのはさみ揚げ(M).jpg" alt="なすのはさみ揚げのお弁当（Mサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>なすのはさみ揚げ<span class="size size-m">Mサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/ひとくちとんかつ(S).jpg" alt="ひとくちとんかつのお弁当（Sサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>ひとくちとんかつ<span class="size size-s">Sサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/ひとくちとんかつ(M).jpg" alt="ひとくちとんかつのお弁当（Mサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>ひとくちとんかつ<span class="size size-m">Mサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/みそ田楽(S).jpg" alt="みそ田楽のお弁当（Sサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>みそ田楽<span class="size size-s">Sサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/みそ田楽(M).jpg" alt="みそ田楽のお弁当（Mサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>みそ田楽<span class="size size-m">Mサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/カレーライス(S).jpg" alt="カレーライスのお弁当（Sサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>カレーライス<span class="size size-s">Sサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/カレーライス(M).jpg" alt="カレーライスのお弁当（Mサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>カレーライス<span class="size size-m">Mサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/スパゲティナポリタン.jpg" alt="スパゲティナポリタンのお弁当" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>スパゲティナポリタン</figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/スパゲティミートソース(S).jpg" alt="スパゲティミートソースのお弁当（Sサイズ）" width="1477" height="1108" loading="lazy" decoding="async">
+            <figcaption>スパゲティミートソース<span class="size size-s">Sサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/スパゲティミートソース(M).jpg" alt="スパゲティミートソースのお弁当（Mサイズ）" width="1477" height="1108" loading="lazy" decoding="async">
+            <figcaption>スパゲティミートソース<span class="size size-m">Mサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/チキンかつ丼(S).jpg" alt="チキンかつ丼のお弁当（Sサイズ）" width="1108" height="1477" loading="lazy" decoding="async">
+            <figcaption>チキンかつ丼<span class="size size-s">Sサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/チキンかつ丼(M).jpg" alt="チキンかつ丼のお弁当（Mサイズ）" width="1108" height="1477" loading="lazy" decoding="async">
+            <figcaption>チキンかつ丼<span class="size size-m">Mサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/ハヤシライス(S).jpg" alt="ハヤシライスのお弁当（Sサイズ）" width="1477" height="1108" loading="lazy" decoding="async">
+            <figcaption>ハヤシライス<span class="size size-s">Sサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/ハヤシライス(M).jpg" alt="ハヤシライスのお弁当（Mサイズ）" width="1477" height="1108" loading="lazy" decoding="async">
+            <figcaption>ハヤシライス<span class="size size-m">Mサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/ミートオムレツ(S).jpg" alt="ミートオムレツのお弁当（Sサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>ミートオムレツ<span class="size size-s">Sサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/ミートオムレツ(M).jpg" alt="ミートオムレツのお弁当（Mサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>ミートオムレツ<span class="size size-m">Mサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/天ぷら(S).jpg" alt="天ぷらのお弁当（Sサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>天ぷら<span class="size size-s">Sサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/天ぷら(M).jpg" alt="天ぷらのお弁当（Mサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>天ぷら<span class="size size-m">Mサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/天津飯風(S).jpg" alt="天津飯風のお弁当（Sサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>天津飯風<span class="size size-s">Sサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/手作りコロッケ(S).jpg" alt="手作りコロッケのお弁当（Sサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>手作りコロッケ<span class="size size-s">Sサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/手作りコロッケ(M).jpg" alt="手作りコロッケのお弁当（Mサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>手作りコロッケ<span class="size size-m">Mサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/照り焼きハンバーグ(M).jpg" alt="照り焼きハンバーグのお弁当（Mサイズ）" width="1474" height="1110" loading="lazy" decoding="async">
+            <figcaption>照り焼きハンバーグ<span class="size size-m">Mサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/酢豚(S).jpg" alt="酢豚のお弁当（Sサイズ）" width="1477" height="1108" loading="lazy" decoding="async">
+            <figcaption>酢豚<span class="size size-s">Sサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/酢豚(M).jpg" alt="酢豚のお弁当（Mサイズ）" width="1477" height="1108" loading="lazy" decoding="async">
+            <figcaption>酢豚<span class="size size-m">Mサイズ</span></figcaption>
+          </figure></li>
+          <li class="sl-card"><figure>
+            <img src="img/menu/鶏のチリソース.jpg" alt="鶏のチリソースのお弁当" width="1477" height="1108" loading="lazy" decoding="async">
+            <figcaption>鶏のチリソース</figcaption>
+          </figure></li>
+          <!-- gallery:end -->
+        </ul>
+        <button class="sl-btn next" aria-label="次へ"><svg class="ico"><use href="#i-right"/></svg></button>
+      </div>
+      <div class="sl-status" aria-hidden="true">
+        <div class="sl-progress"><span id="slBar"></span></div>
+        <span class="sl-count"><b id="slIdx">1</b> / <span id="slTotal">0</span></span>
+      </div>
+    </div>
+    <p class="gallery-more"><a class="btn btn-ghost" href="https://www.instagram.com/bentou20240306/" target="_blank" rel="noopener"><svg class="ico"><use href="#i-insta"/></svg>Instagramも見てね</a></p>
+  </section>
+
+  <section class="price" id="price">
+    <div class="wrap">
+      <div class="sec-head"><span class="sub">お弁当の料金</span><h2>日替わり弁当の料金</h2><p>SサイズとMサイズの2種類からお選びいただけます。</p></div>
+      <div class="price-grid">
+        <div class="price-card">
+          <span class="size" aria-hidden="true">S</span>
+          <p class="size-name">Sサイズ</p>
+          <p class="yen"><b>600</b>円<small>（税込）</small></p>
         </div>
-</div>
-    </footer>
-    <div class="copyright">
-    <a href="#">阿讃の会</a> 
+        <div class="price-card m">
+          <span class="size" aria-hidden="true">M</span>
+          <p class="size-name">Mサイズ</p>
+          <p class="yen"><b>720</b>円<small>（税込）</small></p>
         </div>
-    <p id="pagetop"><a href="#">TOP</a></p>
+      </div>
+      <p class="price-note">ご注文の際に、サイズ（S・M）をお知らせください。</p>
+    </div>
+  </section>
+
+  <section class="menu-sec" id="menu">
+    <div class="wrap menu-grid">
+      <div class="menu-paper">
+        <span class="tape" aria-hidden="true"></span>
+        <!-- 献立表は img/今月の献立.JPG を差し替えるだけで更新されます（ファイル名はそのまま） -->
+        <a href="img/今月の献立.JPG" target="_blank" rel="noopener" data-kondate><img src="img/今月の献立.JPG" alt="今月の献立表。日替わり弁当A・Bの毎日のおかず" width="849" height="1280" loading="lazy" decoding="async" data-kondate></a>
+      </div>
+      <div class="menu-text">
+        <div class="sec-head left"><span class="sub">MENU</span><h2>今月の献立</h2></div>
+        <div class="bubble">日替わり弁当は <b>A</b>・<b>B</b> の2種類！<br>野菜たっぷりの家庭料理を、毎日ちがうおかずで楽しめます。</div>
+        <ul class="info">
+          <li><span>ご注文</span>当日 朝9時まで</li>
+          <li><span>料金</span>Sサイズ 600円／Mサイズ 720円（税込）</li>
+          <li><span>お休み</span>土曜・日曜・祝日</li>
+          <li><span>エリア</span>板野町・上板町を中心に</li>
+        </ul>
+        <p class="menu-note">前もってご予約いただけると助かります。ご予約の変更・追加・キャンセルは当日の朝9時までにご連絡ください。</p>
+        <a class="btn btn-ghost" href="img/今月の献立.JPG" target="_blank" rel="noopener" data-kondate>献立表を大きく見る</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="order" id="order">
+    <div class="wrap">
+      <div class="sec-head"><span class="sub">ご注文方法</span><h2>かんたん3ステップ</h2></div>
+      <ol class="steps">
+        <li class="step"><div class="num">1</div><h3>お電話・LINEでご注文</h3><p><b>当日の朝9時まで</b>に、お弁当の種類（A・B）とサイズ（S・M）、数、お届け先をお知らせください。</p></li>
+        <li class="step"><div class="num">2</div><h3>心をこめて手作り</h3><p>管理栄養士が、添加物を使わずに野菜たっぷりのおかずを手作りします。</p></li>
+        <li class="step"><div class="num">3</div><h3>お昼にお届け</h3><p>お昼ごろにお届けします。</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="sec-head"><span class="sub">ご注文・お問い合わせ</span><h2>お気軽にご連絡ください</h2></div>
+      <div class="contact-grid">
+        <a class="c-card tel" href="tel:08039286977">
+          <span class="ci"><svg class="ico"><use href="#i-phone"/></svg></span>
+          <span class="t">お電話でのご注文</span>
+          <span class="big">080-3928-6977</span>
+          <span class="s">スマートフォンはタップで発信できます</span>
+        </a>
+        <div class="c-card line">
+          <img class="qr" src="img/sns/line-qr.jpg" alt="かまどのLINE友だち追加用QRコード" width="612" height="612" loading="lazy" decoding="async">
+          <div>
+            <p class="t">LINEでのご注文</p>
+            <p>友だち追加して、トークでご注文ください。</p>
+            <a class="line-add" href="https://line.me/ti/p/5j0fuFjNNn" target="_blank" rel="noopener"><svg class="ico"><use href="#i-chat"/></svg>LINEで友だち追加</a>
+            <p class="line-qr-note">パソコンの方はQRコードをスマホで読み取ってください</p>
+          </div>
+        </div>
+      </div>
+      <p class="mail-line">メールでのお問い合わせ：<a href="mailto:asannokaikamado@mail.com"><svg class="ico"><use href="#i-mail"/></svg>asannokaikamado@mail.com</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-logos">
+      <img src="img/logo/kamado-logo-white.png" alt="かまど" width="860" height="314" loading="lazy" decoding="async">
+      <img src="img/logo/asan-logo-white.png" alt="阿讃の会 食で豊かな生活を目指す。" width="1324" height="507" loading="lazy" decoding="async">
+    </div>
+    <div>
+      <h4>阿讃の会の理念</h4>
+      <p>美味しいもの、滋養のあるものを食べると、生活が豊かに感じます。<br>阿讃の会メンバーは、そのような食品づくりに取り組んでいます。</p>
+      <a class="footer-sns" href="https://www.instagram.com/bentou20240306/" target="_blank" rel="noopener"><svg class="ico"><use href="#i-insta"/></svg>Instagram</a>
+    </div>
+  </div>
+  <p class="copyright">© 阿讃の会 かまど</p>
+</footer>
+
+<nav class="order-bar" aria-label="ご注文">
+  <a class="ob-tel" href="tel:08039286977"><svg class="ico"><use href="#i-phone"/></svg>電話で注文</a>
+  <a class="ob-line" href="https://line.me/ti/p/5j0fuFjNNn" target="_blank" rel="noopener"><svg class="ico"><use href="#i-chat"/></svg>LINEで注文</a>
+</nav>
 </body>
 </html>

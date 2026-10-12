@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>【保管用デザイン案C フォト・ミニマル】阿讃の会かまど - 上板町の宅配お弁当屋さん</title>
+<link rel="icon" type="image/png" href="../img/logo/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #ffffff;
+  --soft: #f4f5f1;
+  --text: #1d2420;
+  --muted: #5d6861;
+  --green: #2e5b45;
+  --green-dark: #22463a;
+  --green-soft: #e4ede7;
+  --line: #e1e4de;
+  --sans: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  --en: "Outfit", "Noto Sans JP", sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: .03em;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+.wrap { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+.ico { width: 1.15em; height: 1.15em; flex: none; }
+.nb { white-space: nowrap; }
+.en-label { font-family: var(--en); font-size: 13px; font-weight: 500; letter-spacing: .28em; color: var(--green); text-transform: uppercase; }
+
+/* デザイン案切り替えバー（確認用・本番では削除） */
+.proposal-bar { background: #1c1917; color: #d6d3d1; font-size: 12px; text-align: center; padding: 6px 12px; letter-spacing: .08em; position: relative; z-index: 60; }
+.proposal-bar a { color: #fff; margin: 0 6px; }
+.proposal-bar b { color: #fbbf24; }
+
+/* ヘッダー */
+.site-header { position: sticky; top: 0; z-index: 50; background: rgba(255, 255, 255, .95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.header-inner { display: flex; align-items: center; gap: 32px; height: 68px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand img { height: 30px; width: auto; }
+.brand span { font-family: var(--en); font-size: 11px; letter-spacing: .24em; color: var(--muted); }
+.gnav { margin-left: auto; display: flex; gap: 32px; }
+.gnav a { text-decoration: none; font-size: 14px; font-weight: 500; color: var(--muted); transition: color .2s; }
+.gnav a:hover { color: var(--green); }
+.header-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--green); color: #fff; text-decoration: none; font-size: 14px; font-weight: 700; padding: 10px 20px; border-radius: 4px; transition: background .2s; }
+.header-cta:hover { background: var(--green-dark); }
+.menu-toggle { display: none; margin-left: auto; width: 44px; height: 44px; background: none; border: none; color: var(--text); align-items: center; justify-content: center; cursor: pointer; }
+
+/* ヒーロー：写真＋重なるテキストカード */
+.hero { position: relative; padding-bottom: 72px; }
+.hero-photo { height: clamp(320px, 52vh, 520px); overflow: hidden; }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 35%; }
+.hero-card { position: relative; margin-top: -160px; background: var(--bg); width: min(620px, 100%); padding: 48px 56px 8px 0; }
+.hero-card::before { content: ""; position: absolute; top: 0; bottom: 0; right: 100%; width: 100vw; background: var(--bg); }
+.hero-card h1 { font-size: clamp(28px, 3.6vw, 42px); font-weight: 700; line-height: 1.5; letter-spacing: .04em; margin: 14px 0 18px; }
+.hero-card p { color: var(--muted); }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 26px; border-radius: 4px; font-weight: 700; font-size: 15px; text-decoration: none; transition: background .2s, color .2s, border-color .2s; }
+.btn-green { background: var(--green); color: #fff; }
+.btn-green:hover { background: var(--green-dark); }
+.btn-line { border: 1px solid var(--text); color: var(--text); }
+.btn-line:hover { border-color: var(--green); color: var(--green); }
+
+/* セクション共通 */
+section { padding: 104px 0; }
+.sec-head h2 { font-size: clamp(26px, 3vw, 34px); font-weight: 700; letter-spacing: .06em; margin-top: 6px; line-height: 1.5; }
+.sec-head-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 40px; }
+.text-link { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: var(--green); text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
+
+/* 特徴 */
+.intro { padding-top: 32px; }
+.intro-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 80px; align-items: start; }
+.intro-grid > div > p { color: var(--muted); margin-top: 20px; }
+.facts { list-style: none; border-top: 1px solid var(--line); }
+.facts li { display: grid; grid-template-columns: 170px 1fr; gap: 24px; align-items: baseline; padding: 26px 0; border-bottom: 1px solid var(--line); }
+.fact-num { font-family: var(--en); font-size: 36px; font-weight: 500; color: var(--green); line-height: 1.2; letter-spacing: .02em; }
+.fact-num.jp { font-family: var(--sans); font-size: 28px; font-weight: 700; letter-spacing: .08em; }
+.facts h3 { font-size: 17px; font-weight: 700; margin-bottom: 2px; }
+.facts p { font-size: 14px; color: var(--muted); }
+
+/* お弁当ギャラリー：大きな写真＋サムネイル */
+.gallery { background: var(--soft); }
+.stage { position: relative; isolation: isolate; aspect-ratio: 16 / 9; border-radius: 8px; overflow: hidden; background: #ddd; touch-action: pan-y; user-select: none; }
+.stage-slide { position: absolute; inset: 0; opacity: 0; z-index: 0; transition: opacity .8s ease; }
+.stage-slide.is-prev { opacity: 1; z-index: 1; transition: none; }
+.stage-slide.is-active { opacity: 1; z-index: 2; }
+.stage-slide img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.06); transition: transform 6s ease-out; }
+.stage-slide.is-active img { transform: scale(1); }
+.stage::after { content: ""; position: absolute; inset: auto 0 0 0; height: 40%; background: linear-gradient(transparent, rgba(0, 0, 0, .55)); pointer-events: none; z-index: 3; }
+.stage-caption { position: absolute; left: 32px; right: 32px; bottom: 26px; z-index: 4; display: flex; align-items: flex-end; justify-content: space-between; color: #fff; pointer-events: none; }
+.stage-name { font-size: clamp(20px, 2.6vw, 30px); font-weight: 700; letter-spacing: .06em; text-shadow: 0 2px 12px rgba(0, 0, 0, .3); }
+.stage-count { font-family: var(--en); font-size: 15px; letter-spacing: .14em; }
+.stage-count b { font-size: 26px; font-weight: 500; }
+.stage-btn { position: absolute; top: 50%; z-index: 5; width: 52px; height: 52px; margin-top: -26px; border-radius: 50%; border: none; background: rgba(255, 255, 255, .9); color: var(--text); display: grid; place-items: center; cursor: pointer; opacity: 0; transition: opacity .25s, background .2s; }
+.stage:hover .stage-btn, .stage-btn:focus-visible { opacity: 1; }
+.stage-btn:hover { background: #fff; }
+.stage-btn.prev { left: 20px; }
+.stage-btn.next { right: 20px; }
+.stage-btn .ico { width: 22px; height: 22px; }
+.stage-progress { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; z-index: 5; background: rgba(255, 255, 255, .25); }
+.stage-progress span { display: block; height: 100%; background: #fff; transform-origin: left; transform: scaleX(0); }
+.thumbs { display: flex; gap: 10px; overflow-x: auto; scrollbar-width: thin; padding: 16px 2px 8px; scroll-behavior: smooth; }
+.thumb { flex: 0 0 120px; aspect-ratio: 16 / 9; border-radius: 4px; overflow: hidden; border: none; padding: 0; cursor: pointer; opacity: .5; outline: 2px solid transparent; outline-offset: 2px; transition: opacity .2s, outline-color .2s; background: #ddd; }
+.thumb:hover { opacity: .85; }
+.thumb.is-active { opacity: 1; outline-color: var(--green); }
+.thumb img { width: 100%; height: 100%; object-fit: cover; }
+
+/* 献立・ご注文方法 */
+.info-grid { display: grid; grid-template-columns: minmax(0, 440px) 1fr; gap: 88px; align-items: start; }
+.menu-img { display: block; margin-top: 28px; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; position: relative; text-decoration: none; }
+.menu-img .zoom { position: absolute; right: 12px; bottom: 12px; display: inline-flex; align-items: center; gap: 6px; background: rgba(29, 36, 32, .82); color: #fff; font-size: 12px; padding: 6px 12px; border-radius: 999px; }
+.timeline { list-style: none; margin-top: 32px; position: relative; }
+.timeline::before { content: ""; position: absolute; left: 7px; top: 12px; bottom: 12px; width: 2px; background: var(--green-soft); }
+.timeline li { position: relative; padding: 0 0 34px 44px; }
+.timeline li::before { content: ""; position: absolute; left: 0; top: 7px; width: 16px; height: 16px; border-radius: 50%; background: var(--bg); border: 4px solid var(--green); }
+.tl-time { font-family: var(--en); font-size: 13px; font-weight: 600; color: var(--green); letter-spacing: .14em; }
+.timeline h3 { font-size: 19px; font-weight: 700; margin: 2px 0 4px; }
+.timeline p { font-size: 15px; color: var(--muted); }
+.spec { display: grid; grid-template-columns: 130px 1fr; background: var(--soft); border-radius: 8px; padding: 12px 28px; margin-top: 8px; }
+.spec dt, .spec dd { padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 15px; }
+.spec dt { font-weight: 700; color: var(--green); }
+.spec dt:last-of-type, .spec dd:last-of-type { border-bottom: none; }
+.note { font-size: 13px; color: var(--muted); margin-top: 18px; }
+
+/* お問い合わせ */
+.contact { background: var(--green); color: #fff; }
+.contact .en-label { color: #b9d3c3; }
+.contact-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: rgba(255, 255, 255, .18); border-radius: 8px; overflow: hidden; margin-top: 44px; }
+.c-item { background: var(--green); padding: 36px 32px; display: flex; flex-direction: column; gap: 6px; text-decoration: none; transition: background .2s; }
+a.c-item:hover { background: var(--green-dark); }
+.c-item .c-label { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: #b9d3c3; font-weight: 500; letter-spacing: .1em; }
+.c-item .c-main { font-family: var(--en); font-size: clamp(26px, 2.8vw, 34px); font-weight: 500; letter-spacing: .04em; line-height: 1.3; }
+.c-item .c-main.mail { font-family: var(--en); font-size: clamp(15px, 1.5vw, 18px); font-weight: 500; overflow-wrap: anywhere; }
+.c-item .c-sub { font-size: 13px; color: #cfe1d6; }
+.c-item.line { flex-direction: row; align-items: center; gap: 20px; }
+.c-item .qr { width: 108px; height: 108px; border-radius: 6px; background: #fff; padding: 4px; flex: none; }
+
+/* フッター */
+.site-footer { background: var(--green-dark); color: #d4e3d9; padding: 56px 0 28px; }
+.footer-grid { display: grid; grid-template-columns: auto 1fr auto; gap: 56px; align-items: center; }
+.footer-grid .logo { width: 180px; opacity: .9; }
+.footer-grid h4 { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 6px; letter-spacing: .1em; }
+.footer-grid p { font-size: 14px; }
+.footer-sns { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, .35); color: #fff; }
+.copyright { font-family: var(--en); text-align: center; font-size: 12px; letter-spacing: .14em; color: #9fbcab; margin-top: 40px; }
+
+/* スマホ用の電話ボタン */
+.fab { display: none; }
+
+@media (max-width: 1100px) {
+  .c-item.line { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 960px) {
+  .gnav { display: none; position: absolute; top: 68px; left: 0; right: 0; flex-direction: column; gap: 0; background: var(--bg); padding: 8px 24px 20px; border-bottom: 1px solid var(--line); }
+  .gnav.open { display: flex; }
+  .gnav a { padding: 14px 0; border-bottom: 1px solid var(--line); color: var(--text); }
+  .header-cta { display: none; }
+  .menu-toggle { display: inline-flex; }
+}
+@media (max-width: 820px) {
+  section { padding: 80px 0; }
+  .hero { padding-bottom: 40px; }
+  .hero-photo { height: 300px; }
+  .hero-card { margin-top: -64px; padding: 32px 24px 0 0; }
+  .intro-grid { grid-template-columns: 1fr; gap: 40px; }
+  .facts li { grid-template-columns: 1fr; gap: 4px; padding: 22px 0; }
+  .sec-head-row { flex-direction: column; align-items: flex-start; }
+  .stage-btn { opacity: 1; width: 40px; height: 40px; margin-top: -20px; }
+  .stage-btn.prev { left: 10px; }
+  .stage-btn.next { right: 10px; }
+  .stage-caption { left: 18px; right: 18px; bottom: 16px; }
+  .thumb { flex-basis: 88px; }
+  .info-grid { grid-template-columns: 1fr; gap: 72px; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 20px; text-align: center; }
+  .footer-grid .logo { margin: 0 auto; }
+  .footer-sns { margin: 0 auto; }
+  .fab { display: grid; place-items: center; position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 60; width: 60px; height: 60px; border-radius: 50%; background: var(--green); color: #fff; box-shadow: 0 10px 24px -8px rgba(0, 0, 0, .45); }
+  .fab .ico { width: 26px; height: 26px; }
+}
+@media (max-width: 520px) {
+  .wrap { padding: 0 20px; }
+  .brand span { display: none; }
+  .btn { width: 100%; }
+  .c-item.line { flex-direction: column; align-items: flex-start; }
+  .spec { grid-template-columns: 96px 1fr; padding: 8px 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .stage-slide, .stage-slide img { transition: none; }
+  .stage-progress { display: none; }
+}
+</style>
+</head>
+<body id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="4" y1="8" x2="20" y2="8"/><line x1="4" y1="16" x2="20" y2="16"/></symbol>
+  <symbol id="i-zoom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></symbol>
+</svg>
+
+<div class="proposal-bar">保管用デザイン案：<a href="a-wa-modern.html">A 和モダン</a> ／ <b>C フォト・ミニマル</b> ／ <a href="../index.html">現在のサイト</a></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <img src="../img/logo/kamado-logo.png" alt="かまど" width="860" height="314">
+      <span>KAMADO BENTO</span>
+    </a>
+    <nav class="gnav" id="gnav" aria-label="メインメニュー">
+      <a href="#about">お弁当について</a>
+      <a href="#gallery">ギャラリー</a>
+      <a href="#menu">今月の献立</a>
+      <a href="#order">ご注文方法</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+    <a class="header-cta" href="tel:08039286977"><svg class="ico"><use href="#i-phone"/></svg>電話で注文</a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="gnav" aria-label="メニューを開く"><svg class="ico" style="width:26px;height:26px"><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-label="かまどの宅配弁当" style="padding-top:0">
+    <div class="hero-photo"><img src="../img/menu_old/003_鮭の塩焼き.JPG" alt="鮭の塩焼きのお弁当" width="1280" height="720"></div>
+    <div class="wrap">
+      <div class="hero-card">
+        <p class="en-label">Itano &amp; Kamiita, Tokushima</p>
+        <h1><span class="nb">手作りのお弁当を、</span><br><span class="nb">お昼にお届けします。</span></h1>
+        <p>管理栄養士がつくる日替わり弁当。<br>板野町・上板町を中心に宅配しています。</p>
+        <div class="hero-actions">
+          <a class="btn btn-green" href="tel:08039286977"><svg class="ico"><use href="#i-phone"/></svg>080-3928-6977</a>
+          <a class="btn btn-line" href="#order">ご注文方法を見る<svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro" id="about">
+    <div class="wrap intro-grid">
+      <div class="sec-head">
+        <p class="en-label">About</p>
+        <h2><span class="nb">栄養と、おいしさと、</span><br><span class="nb">手作りのぬくもりを。</span></h2>
+        <p>かまどは、徳島県上板町の宅配弁当屋さんです。管理栄養士が作る手作りのお弁当を、お昼時にお届けしています。</p>
+      </div>
+      <ul class="facts">
+        <li><span class="fact-num">A・B</span><div><h3>日替わり弁当は2種類</h3><p>毎日ちがうおかずを、2種類からお選びいただけます。</p></div></li>
+        <li><span class="fact-num">9:00</span><div><h3>当日の朝9時までにご注文</h3><p>お電話またはLINEで。お昼時にお届けします。</p></div></li>
+        <li><span class="fact-num jp">手作り</span><div><h3>管理栄養士の手作り</h3><p>栄養のバランスを考えながら、一品ずつ手作りしています。</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="wrap">
+      <div class="sec-head-row">
+        <div class="sec-head"><p class="en-label">Gallery</p><h2>お弁当ギャラリー</h2></div>
+        <a class="text-link" href="https://www.instagram.com/bentou20240306/" target="_blank" rel="noopener"><svg class="ico"><use href="#i-insta"/></svg>Instagramで最新のお弁当を見る</a>
+      </div>
+      <div class="stage" id="stage" aria-roledescription="carousel" aria-label="お弁当の写真" tabindex="0">
+        <div id="stageSlides"></div>
+        <div class="stage-caption" aria-live="polite"><span class="stage-name" id="stageName"></span><span class="stage-count"><b id="stageIdx">01</b> / <span id="stageTotal"></span></span></div>
+        <button class="stage-btn prev" aria-label="前の写真"><svg class="ico"><use href="#i-left"/></svg></button>
+        <button class="stage-btn next" aria-label="次の写真"><svg class="ico"><use href="#i-right"/></svg></button>
+        <div class="stage-progress"><span id="stageBar"></span></div>
+      </div>
+      <div class="thumbs" id="thumbs" aria-label="写真を選ぶ"></div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="wrap info-grid">
+      <div>
+        <div class="sec-head"><p class="en-label">Menu</p><h2>今月の献立</h2></div>
+        <a class="menu-img" href="../img/今月の献立.JPG" target="_blank" rel="noopener">
+          <img src="../img/今月の献立.JPG" alt="今月の献立表" width="844" height="1280" loading="lazy">
+          <span class="zoom"><svg class="ico"><use href="#i-zoom"/></svg>拡大して見る</span>
+        </a>
+      </div>
+      <div id="order">
+        <div class="sec-head"><p class="en-label">How to order</p><h2>ご注文方法</h2></div>
+        <ol class="timeline">
+          <li><span class="tl-time">〜 9:00 AM</span><h3>お電話・LINEでご注文</h3><p>当日の朝9時までに、お弁当の種類と数、お届け先をお知らせください。</p></li>
+          <li><span class="tl-time">MORNING</span><h3>管理栄養士が手作り</h3><p>その日のおかずを、一品ずつ手作りします。</p></li>
+          <li><span class="tl-time">LUNCH</span><h3>お昼にお届け</h3><p>板野町・上板町を中心に、お昼時にお届けします。</p></li>
+        </ol>
+        <dl class="spec">
+          <dt>日替わり弁当</dt><dd>A・B の2種類</dd>
+          <dt>ご注文締切</dt><dd>当日 朝9:00</dd>
+          <dt>定休日</dt><dd>土曜・日曜・祝日</dd>
+          <dt>配達エリア</dt><dd>板野町・上板町を中心に</dd>
+        </dl>
+        <p class="note">前もってご予約いただけると助かります。ご予約の変更・追加・キャンセルは、当日の朝9時までにご連絡ください。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="sec-head"><p class="en-label">Contact</p><h2>ご注文・お問い合わせ</h2></div>
+      <div class="contact-grid">
+        <a class="c-item" href="tel:08039286977">
+          <span class="c-label"><svg class="ico"><use href="#i-phone"/></svg>お電話</span>
+          <span class="c-main">080-3928-6977</span>
+          <span class="c-sub">スマートフォンはタップで発信できます</span>
+        </a>
+        <div class="c-item line">
+          <img class="qr" src="../img/sns/line-qr.jpg" alt="LINE友だち追加用QRコード" width="612" height="612" loading="lazy">
+          <div>
+            <span class="c-label"><svg class="ico"><use href="#i-chat"/></svg>LINE</span>
+            <p class="c-sub" style="margin-top:6px"><span class="nb">QRコードを読み取って</span><br><span class="nb">友だち追加</span></p>
+          </div>
+        </div>
+        <a class="c-item" href="mailto:asannokaikamado@mail.com">
+          <span class="c-label"><svg class="ico"><use href="#i-mail"/></svg>メール</span>
+          <span class="c-main mail">asannokaikamado@mail.com</span>
+          <span class="c-sub">ご質問などお気軽にどうぞ</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <img class="logo" src="../img/logo/asan-logo-white.png" alt="阿讃の会 食で豊かな生活を目指す。" width="1324" height="507" loading="lazy">
+    <div>
+      <h4>阿讃の会の理念</h4>
+      <p>美味しいもの、滋養のあるものを食べると、生活が豊かに感じます。<br>阿讃の会メンバーは、そのような食品づくりに取り組んでいます。</p>
+    </div>
+    <a class="footer-sns" href="https://www.instagram.com/bentou20240306/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ico"><use href="#i-insta"/></svg></a>
+  </div>
+  <p class="copyright">© ASAN NO KAI KAMADO</p>
+</footer>
+
+<a class="fab" href="tel:08039286977" aria-label="電話で注文する"><svg class="ico"><use href="#i-phone"/></svg></a>
+
+<script>
+// お弁当の写真リスト（写真を追加するときはここに1行足すだけ）
+const DISHES = [
+  ["000_からあげ.JPG", "からあげ"],
+  ["001_鯖の照り焼き.JPG", "鯖の照り焼き"],
+  ["002_ハンバーグ.JPG", "ハンバーグ"],
+  ["003_鮭の塩焼き.JPG", "鮭の塩焼き"],
+  ["004_回鍋肉.JPG", "回鍋肉"],
+  ["005_酢豚.JPG", "酢豚"],
+  ["006_味噌田楽.JPG", "味噌田楽"],
+  ["007_チキンカツ.JPG", "チキンカツ"],
+  ["008_天ぷら.JPG", "天ぷら"],
+  ["009_鶏のゴマ甘酢和え.JPG", "鶏のゴマ甘酢和え"],
+  ["010_鯖の南蛮漬け.JPG", "鯖の南蛮漬け"],
+  ["011_グリルチキントマトソース.JPG", "グリルチキン トマトソース"],
+  ["012_鶏のつくね.JPG", "鶏のつくね"],
+  ["013_鶏と夏野菜の揚げびたし.JPG", "鶏と夏野菜の揚げびたし"],
+  ["014_レンコンのはさみ揚げ.JPG", "レンコンのはさみ揚げ"],
+  ["015_焼肉.JPG", "焼肉"],
+  ["016_肉じゃが.JPG", "肉じゃが"],
+  ["017_鯖のトマトあんかけ.JPG", "鯖のトマトあんかけ"],
+  ["018_照り焼きハンバーグ.JPG", "照り焼きハンバーグ"],
+  ["019_ちらし寿司.JPG", "ちらし寿司"],
+  ["020_三食丼.JPG", "三色丼"],
+];
+
+// スマホメニュー
+const toggle = document.getElementById("menuToggle");
+const gnav = document.getElementById("gnav");
+toggle.addEventListener("click", () => {
+  const open = gnav.classList.toggle("open");
+  toggle.setAttribute("aria-expanded", open);
+});
+gnav.addEventListener("click", e => {
+  if (e.target.tagName === "A") { gnav.classList.remove("open"); toggle.setAttribute("aria-expanded", false); }
+});
+
+// メイン写真＋サムネイルのスライドショー
+(() => {
+  const stage = document.getElementById("stage");
+  const slidesEl = document.getElementById("stageSlides");
+  const thumbsEl = document.getElementById("thumbs");
+  const nameEl = document.getElementById("stageName");
+  const idxEl = document.getElementById("stageIdx");
+  const bar = document.getElementById("stageBar");
+  document.getElementById("stageTotal").textContent = String(DISHES.length).padStart(2, "0");
+
+  slidesEl.innerHTML = DISHES.map(([file, name], i) =>
+    `<figure class="stage-slide" aria-hidden="true"><img src="../img/menu_old/${file}" alt="${name}のお弁当" width="1280" height="720"${i > 1 ? ' loading="lazy"' : ""}></figure>`
+  ).join("");
+  thumbsEl.innerHTML = DISHES.map(([file, name]) =>
+    `<button class="thumb" aria-label="${name}"><img src="../img/menu_old/${file}" alt="" width="1280" height="720" loading="lazy"></button>`
+  ).join("");
+  const slides = [...slidesEl.children];
+  const thumbs = [...thumbsEl.children];
+  let current = 0;
+
+  const show = i => {
+    const prev = current;
+    current = (i + slides.length) % slides.length;
+    // 前の写真を下に残したまま、新しい写真を上からフェードイン
+    slides.forEach((s, k) => {
+      s.classList.toggle("is-prev", k === prev && k !== current);
+      s.classList.toggle("is-active", k === current);
+      s.setAttribute("aria-hidden", k !== current);
+    });
+    thumbs.forEach((t, k) => { t.classList.toggle("is-active", k === current); t.setAttribute("aria-current", k === current); });
+    nameEl.textContent = DISHES[current][1];
+    idxEl.textContent = String(current + 1).padStart(2, "0");
+    // 次の写真を先読み
+    const nextImg = slides[(current + 1) % slides.length].querySelector("img");
+    nextImg.loading = "eager";
+    // 選択中のサムネイルを横方向だけスクロールして見える位置へ
+    const t = thumbs[current];
+    thumbsEl.scrollTo({ left: t.offsetLeft - thumbsEl.offsetLeft - (thumbsEl.clientWidth - t.offsetWidth) / 2 });
+    elapsed = 0; startAt = performance.now();
+  };
+
+  document.querySelector(".stage-btn.prev").addEventListener("click", () => show(current - 1));
+  document.querySelector(".stage-btn.next").addEventListener("click", () => show(current + 1));
+  thumbs.forEach((t, i) => t.addEventListener("click", () => show(i)));
+  stage.addEventListener("keydown", e => {
+    if (e.key === "ArrowRight") { e.preventDefault(); show(current + 1); }
+    if (e.key === "ArrowLeft") { e.preventDefault(); show(current - 1); }
+  });
+
+  // スワイプ操作
+  let downX = null;
+  stage.addEventListener("pointerdown", e => { downX = e.clientX; });
+  stage.addEventListener("pointerup", e => {
+    if (downX === null) return;
+    const dx = e.clientX - downX;
+    downX = null;
+    if (Math.abs(dx) > 40) show(current + (dx < 0 ? 1 : -1));
+  });
+
+  // 自動再生（プログレスバー付き、ホバー中は一時停止）
+  const DURATION = 5000;
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let elapsed = 0, startAt = performance.now(), paused = false;
+  const pause = () => { if (!paused) { elapsed += performance.now() - startAt; paused = true; } };
+  const resume = () => { if (paused) { startAt = performance.now(); paused = false; } };
+  stage.addEventListener("mouseenter", pause);
+  stage.addEventListener("mouseleave", resume);
+  stage.addEventListener("focusin", pause);
+  stage.addEventListener("focusout", resume);
+  document.addEventListener("visibilitychange", () => document.hidden ? pause() : resume());
+
+  const tick = now => {
+    if (!paused) {
+      const t = elapsed + (now - startAt);
+      bar.style.transform = `scaleX(${Math.min(t / DURATION, 1)})`;
+      if (t >= DURATION) show(current + 1);
+    }
+    requestAnimationFrame(tick);
+  };
+
+  show(0);
+  if (!reduce) requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>
