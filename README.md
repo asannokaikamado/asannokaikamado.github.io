@@ -18,6 +18,7 @@ img/
 ├── logo/               ロゴ・ファビコン（original/ に加工前の元画像）
 └── sns/                LINEのQRコード、SNS共有用の画像（ogp.jpg）
 backup/                 採用しなかったデザイン案（検索には出ない設定）
+THIRD_PARTY_NOTICES.md  使っているアイコン・フォントのライセンス
 ```
 
 ## 毎月の献立表の更新
